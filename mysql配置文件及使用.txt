@@ -1,0 +1,18 @@
+xml配置文件
+  <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>8.0.21</version>
+        </dependency>
+
+使用
+public void test1() throws PropertyVetoException {
+
+        //创建数据源对象
+        ComboPooledDataSource dataSource = new ComboPooledDataSource();
+        //8.0.21版本的driver：com.mysql.cj.jdbc.Driver
+        dataSource.setDriverClass("com.mysql.cj.jdbc.Driver");
+        //url：jdbc:mysql://localhost:3306/test?serverTimezone=CST&useSSL=false&useUnicode=true&characterEncoding=UTF-8
+        dataSource.setJdbcUrl("jdbc:mysql://localhost:3306/test?serverTimezone=CST&useSSL=false&useUnicode=true&characterEncoding=UTF-8");
+        dataSource.setUser("root");
+        dataSource.setPassword("password");
