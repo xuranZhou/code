@@ -1,0 +1,6 @@
+地址
+D:\ELK\elasticsearch-head-master
+
+cd D:\ELK\elasticsearch-head-master
+d:
+npm run start
