@@ -4,7 +4,7 @@
     <!--    数据源对象-->
     <bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource">
         <property name="driverClass" value="${jdbc.driver}"/>
-<!--        jdbc:mysql://localhost:3306/test?serverTimezone=CST&useSSL=false&useUnicode=true&characterEncoding=UTF-8-->
+<!--       jdbc:mysql://localhost:3306/test?serverTimezone=CST&amp;useSSL=false&amp;useUnicode=true&amp;characterEncoding=UTF-8-->
         <property name="jdbcUrl" value="${jdbc.url}"/>
         <property name="user" value="${jdbc.username}"/>
         <property name="password" value="${jdbc.password}"/>
